@@ -152,8 +152,8 @@ class VideoLooper(object):
         message if the on screen display is enabled.
         """
         # Print message to console with number of movies in playlist.
-        message = '{0} Datei{1}.'.format(playlist.length(), 
-            'n' if playlist.length() >= 2 else '').' gefunden.'
+        message = '{0} Datei{1} gefunden.'.format(playlist.length(), 
+            'n' if playlist.length() >= 2 else '')
         self._print(message)
         # Do nothing else if the OSD is turned off.
         if not self._osd:
